@@ -23,11 +23,10 @@ def find_greater_pair(src)
     greater_pairs = []
       if src[row_index][0] < src[row_index][1]
         greater_pairs << src[row_index][1]
-        row_index += 1
       else
         greater_pairs << src[row_index][0]
-        row_index += 1
     end
+    row_index += 1
     greater_pairs
 end
 
